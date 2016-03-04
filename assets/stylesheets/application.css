@@ -1,61 +1,103 @@
+/* begin font sizes */
+/* end font sizes */
+/* begin colors */
+/* end colors */
+/* begin easy access variables */
+/* end easy access variables */
+/* begin fonts */
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("../../assets/fonts/RobotoCondensed-Regular.ttf"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../assets/fonts/icomoon.eot");
+  src: url("../../assets/fonts/icomoon.eot#iefix") format("embedded-opentype"), url("../../assets/fonts/icomoon.ttf") format("truetype"), url("../../fonts/icomoon.woff") format("woff"), url("../../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-location:before {
+  content: "\e900"; }
+
+.icon-user:before {
+  content: "\e901"; }
+
+.icon-menu:before {
+  content: "\e902"; }
+
+.icon-facebook2:before {
+  content: "\e903"; }
+
+/* end fonts */
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Helvetica';
-  background-color: #FFF;
-  color: #000; }
+  font-family: 'Roboto Condensed';
+  background-color: #202020;
+  color: #d7af72; }
 
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px; }
 
-#container {
-  width: 440px;
-  margin: auto; }
-
-#fixed-content {
+#fixed-container {
   width: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
-  right: 0px; }
+  right: 0px;
+  height: 80px;
+  background-color: #d1d1d1; }
+  #fixed-container #menu {
+    height: 80px;
+    margin: auto;
+    width: 550px; }
+    #fixed-container #menu #menu-bar {
+      line-height: 80px; }
+      #fixed-container #menu #menu-bar #menu-button {
+        height: 80px;
+        float: right; }
+        #fixed-container #menu #menu-bar #menu-button #menu-button-a {
+          text-decoration: none;
+          font-size: 40px;
+          margin: 0 10px 0 0; }
+    #fixed-container #menu #menu-list {
+      margin: 2px 10px 0 0;
+      clear: both;
+      float: right;
+      width: 40%;
+      overflow: hidden;
+      -webkit-transition: max-height 0.2s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -o-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out; }
+      #fixed-container #menu #menu-list .menu-item {
+        line-height: 53.33333px;
+        font-size: 19px;
+        text-align: right;
+        background-color: #d1d1d1;
+        border: 2px solid #202020; }
+        #fixed-container #menu #menu-list .menu-item a {
+          width: 100%;
+          color: #202020;
+          text-decoration: none;
+          border-bottom: 1px solid #202020;
+          margin: 0 10px 0 0; }
+        #fixed-container #menu #menu-list .menu-item a:hover {
+          border-bottom: none; }
 
 #page-start {
   height: 80px; }
-
-#menu {
-  margin: auto;
-  width: 440px;
-  height: 80px;
-  background-color: white; }
-
-#menu-bar {
-  line-height: 80px; }
-
-#menu-button {
-  float: right; }
-
-#menu-list {
-  clear: both;
-  width: 100%;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out; }
-
-.menu-item {
-  line-height: 40px;
-  text-align: right;
-  background-color: white;
-  border-bottom: 1px solid black; }
-  .menu-item a {
-    width: 100%;
-    color: black;
-    text-decoration: none; }
-  .menu-item a:hover {
-    border-bottom: 1px solid black; }
 
 .closed {
   opacity: 0;
@@ -66,9 +108,30 @@ ul {
   height: auto; }
 
 .active {
-  color: red; }
+  color: #d7af72; }
 
 .unactive {
-  color: green; }
+  color: #404040; }
+
+#container {
+  width: 550px;
+  margin: auto; }
+  #container #events .event {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-top: 0.7em;
+    padding-bottom: 1.0em; }
+    #container #events .event .name {
+      font-size: 25px;
+      line-height: 1.4em; }
+    #container #events .event .place-location {
+      font-size: 19px;
+      line-height: 1.4em; }
+  #container #events .event:first-child {
+    border-top: none; }
+  #container #events .event:last-child {
+    border-bottom: none; }
 
 /*# sourceMappingURL=application.css.map */
