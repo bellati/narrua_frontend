@@ -99,11 +99,13 @@ ul {
           display: block;
           width: 100%;
           color: #eb7260;
-          text-decoration: none;
-          border-bottom: 1px solid #eb7260;
-          margin: 0 10px 0 0; }
-        #fixed-container #menu #menu-list .menu-item a:hover {
-          border-bottom: none; }
+          text-decoration: none; }
+          #fixed-container #menu #menu-list .menu-item a .menu-item-label {
+            display: inline;
+            margin: 0 10px 0 0;
+            border-bottom: 2px solid #eb7260; }
+          #fixed-container #menu #menu-list .menu-item a .menu-item-label:hover {
+            border-bottom: none; }
 
 #page-start {
   height: 80px; }
