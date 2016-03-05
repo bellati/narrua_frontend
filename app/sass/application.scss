@@ -122,6 +122,7 @@ ul {
 }
 
 #fixed-container {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -155,7 +156,7 @@ ul {
       transition: all 0.2s ease-out;
       border-bottom: 2px solid $menu-border;
       .menu-item {
-        line-height: $header-height / 2.5;
+        line-height: $header-height / 2;
         font-size: $font-regular;
         text-align: right;
         background-color: $menu-background-color;
@@ -168,6 +169,7 @@ ul {
           .menu-item-label {
             display: inline;
             margin: 0 10px 0 0;
+            text-transform: uppercase;
             border-bottom: 2px solid $menu-color;
           }
         }
@@ -196,7 +198,7 @@ ul {
   // opacity: 1;
   // height: auto;
   opacity: 1;
-  max-height: 138px;
+  max-height: 168px;
 }
 
 .active {

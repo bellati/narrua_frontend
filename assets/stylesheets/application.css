@@ -60,6 +60,7 @@ ul {
   padding: 0px; }
 
 #fixed-container {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -90,7 +91,7 @@ ul {
       transition: all 0.2s ease-out;
       border-bottom: 2px solid #eb7260; }
       #fixed-container #menu #menu-list .menu-item {
-        line-height: 32px;
+        line-height: 40px;
         font-size: 19px;
         text-align: right;
         background-color: #354458;
@@ -103,6 +104,7 @@ ul {
           #fixed-container #menu #menu-list .menu-item a .menu-item-label {
             display: inline;
             margin: 0 10px 0 0;
+            text-transform: uppercase;
             border-bottom: 2px solid #eb7260; }
         #fixed-container #menu #menu-list .menu-item a:hover .menu-item-label, #fixed-container #menu #menu-list .menu-item a:active .menu-item-label {
           border-bottom: none; }
@@ -116,7 +118,7 @@ ul {
 
 .opened {
   opacity: 1;
-  max-height: 138px; }
+  max-height: 168px; }
 
 .active, #container #events .event .name a:active {
   color: #eb7260; }
