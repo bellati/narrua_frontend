@@ -91,7 +91,7 @@ ul {
       transition: all 0.2s ease-out;
       border-bottom: 2px solid #eb7260; }
       #fixed-container #menu #menu-list .menu-item {
-        line-height: 40px;
+        line-height: 47.05882px;
         font-size: 19px;
         text-align: right;
         background-color: #354458;
@@ -108,17 +108,15 @@ ul {
             border-bottom: 2px solid #eb7260; }
         #fixed-container #menu #menu-list .menu-item a:hover .menu-item-label, #fixed-container #menu #menu-list .menu-item a:active .menu-item-label {
           border-bottom: none; }
+    #fixed-container #menu .closed {
+      opacity: 0;
+      max-height: 0px; }
+    #fixed-container #menu .opened {
+      opacity: 1;
+      max-height: 245px; }
 
 #page-start {
   height: 80px; }
-
-.closed {
-  opacity: 0;
-  max-height: 0px; }
-
-.opened {
-  opacity: 1;
-  max-height: 168px; }
 
 .active, #container #events .event .name a:active {
   color: #eb7260; }

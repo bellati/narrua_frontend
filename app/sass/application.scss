@@ -156,7 +156,7 @@ ul {
       transition: all 0.2s ease-out;
       border-bottom: 2px solid $menu-border;
       .menu-item {
-        line-height: $header-height / 2;
+        line-height: $header-height / 1.7;
         font-size: $font-regular;
         text-align: right;
         background-color: $menu-background-color;
@@ -180,25 +180,24 @@ ul {
         }
       }
     }
+    .closed {
+      // opacity: 0;
+      // height: auto;
+      opacity: 0;
+      max-height: 0px;
+    }
+
+    .opened {
+      // opacity: 1;
+      // height: auto;
+      opacity: 1;
+      max-height: 245px;
+    }
   }
 }
 
 #page-start {
   height: $header-height;
-}
-
-.closed {
-  // opacity: 0;
-  // height: auto;
-  opacity: 0;
-  max-height: 0px;
-}
-
-.opened {
-  // opacity: 1;
-  // height: auto;
-  opacity: 1;
-  max-height: 168px;
 }
 
 .active {
