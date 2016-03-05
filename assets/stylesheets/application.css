@@ -104,8 +104,8 @@ ul {
             display: inline;
             margin: 0 10px 0 0;
             border-bottom: 2px solid #eb7260; }
-          #fixed-container #menu #menu-list .menu-item a .menu-item-label:hover {
-            border-bottom: none; }
+        #fixed-container #menu #menu-list .menu-item a:hover .menu-item-label, #fixed-container #menu #menu-list .menu-item a:active .menu-item-label {
+          border-bottom: none; }
 
 #page-start {
   height: 80px; }

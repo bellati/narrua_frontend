@@ -170,7 +170,9 @@ ul {
             margin: 0 10px 0 0;
             border-bottom: 2px solid $menu-color;
           }
-          .menu-item-label:hover {
+        }
+        a:hover, a:active {
+          .menu-item-label {
             border-bottom: none;
           }
         }
