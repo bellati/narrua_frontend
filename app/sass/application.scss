@@ -121,6 +121,10 @@ ul {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 #fixed-container {
   display: block;
   width: 100%;
@@ -165,7 +169,6 @@ ul {
           display: block;
           width: 100%;
           color: $menu-color;
-          text-decoration: none;
           .menu-item-label {
             display: inline;
             margin: 0 10px 0 0;
@@ -229,7 +232,6 @@ ul {
         font-size: $font-biggest;
         line-height: 1.4em;
         a {
-          text-decoration: none;
           color: $color;
         }
         a:active {
@@ -285,7 +287,26 @@ ul {
         word-wrap: break-word;
         font-size: $font-small;
         color: $color-detail;
+        .price {
+
+        }
+        .link {
+
+        }
       }
+    }
+  }
+  .text {
+    width: 95%;
+    margin: auto;
+    color: $color;
+    font-size: $font-biggest;
+    text-align: center;
+    a {
+      color: $color;
+    }
+    a:active {
+      color: $color-detail;
     }
   }
 }

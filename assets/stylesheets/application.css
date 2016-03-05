@@ -59,6 +59,9 @@ ul {
   margin: 0px;
   padding: 0px; }
 
+a {
+  text-decoration: none; }
+
 #fixed-container {
   display: block;
   width: 100%;
@@ -99,8 +102,7 @@ ul {
         #fixed-container #menu #menu-list .menu-item a {
           display: block;
           width: 100%;
-          color: #eb7260;
-          text-decoration: none; }
+          color: #eb7260; }
           #fixed-container #menu #menu-list .menu-item a .menu-item-label {
             display: inline;
             margin: 0 10px 0 0;
@@ -143,7 +145,6 @@ ul {
       font-size: 25px;
       line-height: 1.4em; }
       #container #events .event .name a, #container #event-detail .event .name a {
-        text-decoration: none;
         color: #e9e0d6; }
     #container #events .event .location-time, #container #event-detail .event .location-time {
       font-size: 17px;
@@ -181,5 +182,15 @@ ul {
     word-wrap: break-word;
     font-size: 15px;
     color: #eb7260; }
+  #container .text {
+    width: 95%;
+    margin: auto;
+    color: #e9e0d6;
+    font-size: 25px;
+    text-align: center; }
+    #container .text a {
+      color: #e9e0d6; }
+    #container .text a:active {
+      color: #eb7260; }
 
 /*# sourceMappingURL=application.css.map */
