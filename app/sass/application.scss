@@ -229,6 +229,9 @@ ul {
           text-decoration: none;
           color: $color;
         }
+        a:active {
+          @extend .active;
+        }
       }
       .place-location {
         font-size: $font-regular-small;

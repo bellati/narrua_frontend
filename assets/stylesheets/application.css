@@ -118,7 +118,7 @@ ul {
   opacity: 1;
   max-height: 138px; }
 
-.active {
+.active, #container #events .event .name a:active {
   color: #eb7260; }
 
 .unactive {
