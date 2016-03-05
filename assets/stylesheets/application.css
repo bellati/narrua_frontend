@@ -1,6 +1,16 @@
 /* begin font sizes */
 /* end font sizes */
 /* begin colors */
+/* begin grey scale */
+/* end grey scale */
+/* begin papua nova guinea */
+/* end papua nova guinea */
+/* begin my little projects */
+/* end my little projects */
+/* begin alexandra kuban web design */
+/* end alexandra kuban web design */
+/* begin gravual */
+/* end gravual */
 /* end colors */
 /* begin easy access variables */
 /* end easy access variables */
@@ -42,8 +52,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto Condensed';
-  background-color: #202020;
-  color: #d7af72; }
+  background-color: #354458; }
 
 ul {
   list-style: none;
@@ -57,11 +66,11 @@ ul {
   left: 0px;
   right: 0px;
   height: 80px;
-  background-color: #d1d1d1; }
+  background-color: #354458; }
   #fixed-container #menu {
     height: 80px;
     margin: auto;
-    width: 550px; }
+    width: 100%; }
     #fixed-container #menu #menu-bar {
       line-height: 80px; }
       #fixed-container #menu #menu-bar #menu-button {
@@ -72,26 +81,26 @@ ul {
           font-size: 40px;
           margin: 0 10px 0 0; }
     #fixed-container #menu #menu-list {
-      margin: 2px 10px 0 0;
       clear: both;
-      float: right;
-      width: 40%;
+      width: 100%;
       overflow: hidden;
-      -webkit-transition: max-height 0.2s ease-in-out;
-      -moz-transition: opacity 0.2s ease-in-out;
-      -o-transition: opacity 0.2s ease-in-out;
-      transition: opacity 0.2s ease-in-out; }
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      border-bottom: 2px solid #eb7260; }
       #fixed-container #menu #menu-list .menu-item {
-        line-height: 53.33333px;
+        line-height: 32px;
         font-size: 19px;
         text-align: right;
-        background-color: #d1d1d1;
-        border: 2px solid #202020; }
+        background-color: #354458;
+        border-top: 2px solid #eb7260; }
         #fixed-container #menu #menu-list .menu-item a {
+          display: block;
           width: 100%;
-          color: #202020;
+          color: #eb7260;
           text-decoration: none;
-          border-bottom: 1px solid #202020;
+          border-bottom: 1px solid #eb7260;
           margin: 0 10px 0 0; }
         #fixed-container #menu #menu-list .menu-item a:hover {
           border-bottom: none; }
@@ -101,34 +110,43 @@ ul {
 
 .closed {
   opacity: 0;
-  height: auto; }
+  max-height: 0px; }
 
 .opened {
   opacity: 1;
-  height: auto; }
+  max-height: 138px; }
 
 .active {
-  color: #d7af72; }
+  color: #eb7260; }
 
 .unactive {
-  color: #404040; }
+  color: #e9e0d6; }
 
 #container {
-  width: 550px;
+  width: 100%;
   margin: auto; }
   #container #events .event {
-    width: 100%;
+    width: 95%;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin: auto;
     padding-top: 0.7em;
-    padding-bottom: 1.0em; }
+    padding-bottom: 1.0em;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+    #container #events .event .date {
+      font-size: 15px;
+      color: #eb7260;
+      line-height: 1.1em; }
     #container #events .event .name {
       font-size: 25px;
       line-height: 1.4em; }
+      #container #events .event .name a {
+        text-decoration: none;
+        color: #e9e0d6; }
     #container #events .event .place-location {
-      font-size: 19px;
-      line-height: 1.4em; }
+      font-size: 17px;
+      line-height: 1.4em;
+      color: #eb7260; }
   #container #events .event:first-child {
     border-top: none; }
   #container #events .event:last-child {
